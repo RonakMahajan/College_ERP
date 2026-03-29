@@ -11,6 +11,7 @@ const app = express();
 app.use(cors({
   origin: [
     "https://collegemanagement-erp.netlify.app",
+    "https://college-9w36fsgii-ronakmahajans-projects.vercel.app",
     "http://localhost:5173"
   ],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
