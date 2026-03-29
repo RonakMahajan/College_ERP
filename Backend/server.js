@@ -8,15 +8,34 @@ dotenv.config();
 const app = express();
 
 // Middleware
+// ✅ FINAL CORS FIX (Vercel + Netlify + Localhost)
+const allowedOrigins = [
+  "https://collegemanagement-erp.netlify.app",
+  "http://localhost:5173"
+];
+
 app.use(cors({
-  origin: [
-    "https://collegemanagement-erp.netlify.app",
-    "https://college-9w36fsgii-ronakmahajans-projects.vercel.app",
-    "http://localhost:5173"
-  ],
+  origin: function (origin, callback) {
+    // allow requests with no origin (like Postman)
+    if (!origin) return callback(null, true);
+
+    // allow known origins
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+
+    // ✅ allow ALL vercel domains dynamically
+    if (origin.includes("vercel.app")) {
+      return callback(null, true);
+    }
+
+    return callback(new Error("Not allowed by CORS"));
+  },
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"]
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true
 }));
+
 app.use(express.json());
 
 // Routes
