@@ -87,12 +87,8 @@ Once MongoDB is running, use this in `Backebnd/.env`:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
-```
+git clone https://github.com/RonakMahajan/College_ERP
 
-
----
 
 ### 2. Backend Setup
 
@@ -156,13 +152,8 @@ npm install
 
 Create a `.env` file inside the `Frontend/` folder:
 
-```bash
-# On Windows (Command Prompt)
-copy NUL .env
 
-# On Mac/Linux
-touch .env
-```
+
 
 Open `.env` and add the following:
 
@@ -299,7 +290,7 @@ College ERP/
 | Variable | Description | Example |
 |---|---|---|
 | `PORT` | Port the backend server listens on | `5000` |
-| `MONGO_URI` | MongoDB connection string | `mongodb://127.0.0.1:27017/college_erp` |
+| `MONGO_URI` | MongoDB connection string|
 | `JWT_SECRET` | Secret key for signing JWT tokens | Any long random string |
 | `NODE_ENV` | Environment mode | `development` |
 
@@ -316,4 +307,4 @@ College ERP/
 This project is for educational and demonstration purposes.
 =======
 # College_ERP
->>>>>>> 8798ebea41de6e8844b0ec2c5600394b7a3e1af9
+
