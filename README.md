@@ -3,6 +3,21 @@
 
 A full-stack **MERN** web application for managing college admissions with real-time seat tracking, quota enforcement, role-based access control, and complete admission workflow.
 
+## 🌐 Live Demo
+
+👉 [Open College ERP](https://college-erp-sable.vercel.app/login)
+    Frontend deployed on Vercel
+    Backend deployed on Railway
+    
+## 🔐 Demo Access
+
+Pre-configured demo accounts are available to explore role-based functionality.
+
+On the login page, simply click a role to auto-fill the credentials:
+
+- 👑 **Admin** — Full access
+- 📋 **Admission Officer** — Applicant & seat management
+- 📊 **Management** — View-only dashboard
 
 ## 🚀 Tech Stack
 
