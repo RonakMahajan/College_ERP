@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎓 College Admission Management ERP
 
 A full-stack **MERN** web application for managing college admissions with real-time seat tracking, quota enforcement, role-based access control, and complete admission workflow.
@@ -301,3 +302,6 @@ College ERP/
 ## 📄 License
 
 This project is for educational and demonstration purposes.
+=======
+# College_ERP
+>>>>>>> 8798ebea41de6e8844b0ec2c5600394b7a3e1af9
