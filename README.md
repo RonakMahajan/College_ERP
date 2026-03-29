@@ -1,11 +1,8 @@
-<<<<<<< HEAD
+
 # 🎓 College Admission Management ERP
 
 A full-stack **MERN** web application for managing college admissions with real-time seat tracking, quota enforcement, role-based access control, and complete admission workflow.
 
-> **AI Tools Used**: Antigravity AI (Google DeepMind) — used for code scaffolding and boilerplate. All core business logic (quota validation, admission number generation, JWT auth, role-based access) was understood and reviewed by the developer.
-
----
 
 ## 🚀 Tech Stack
 
