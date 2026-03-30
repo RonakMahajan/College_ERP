@@ -272,13 +272,15 @@ export default function Applicants() {
                       >
                         View
                       </button>
-                      <button
-                        id={`delete-${a._id}`}
-                        className="btn btn-danger btn-sm"
-                        onClick={() => handleDelete(a._id, a.name)}
-                      >
-                        ✕
-                      </button>
+                      {!isManagement &&(
+                          <button
+                          id={`delete-${a._id}`}
+                          className="btn btn-danger btn-sm"
+                          onClick={() => handleDelete(a._id, a.name)}
+                        >
+                          ✕
+                        </button>
+                      )}
                     </div>
                   </td>
                 </tr>
@@ -293,7 +295,7 @@ export default function Applicants() {
         <div className="modal-overlay" onClick={() => setShowModal(false)}>
           <div className="modal modal-lg" onClick={(e) => e.stopPropagation()}>
              <div className="modal-header">
-              <h3>➕ New Applicant</h3>
+              <h3>➕ New Applicant</h3>    
               <button 
               //if user in manaagement then hide this 
                 className="modal-close"
