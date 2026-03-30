@@ -5,8 +5,8 @@ A full-stack **MERN** web application for managing college admissions with real-
 
 ## 🌐 Live Demo
 
-👉 [Open College ERP](https://college-erp-sable.vercel.app/login)
-    Frontend deployed on Vercel
+👉 [Open College ERP](https://collegemanagement-erp.netlify.app/login)
+    Frontend deployed on Netlify
     Backend deployed on Railway
     
 ## 🔐 Demo Access
